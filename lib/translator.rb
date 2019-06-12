@@ -7,7 +7,7 @@ def load_library(file)
   
   dictionary = {"get_emoticon" => {}, "get_meaning" => {}}
   
-  emoticon_library.each do |emoji_title, emoji_face|
+  emoticon_library.each do |emoji_title, face|
     binding.pry
   end
   
