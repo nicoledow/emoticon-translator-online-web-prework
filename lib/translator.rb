@@ -17,7 +17,7 @@ def load_library(file)
   emoticon_library.each do |emoji_title, faces_array|
     dictionary["get_emoticon"][faces_array[0]] = faces_array[1]
   end
-  
+  binding.pry
   dictionary
 end
 
