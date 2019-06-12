@@ -35,6 +35,6 @@ def get_english_meaning(yaml_file, emoticon)
   
   if emoticon_dictionary["get_meaning"].has_key?(emoticon)
     emoticon_dictionary["get_meaning"][emoticon]
-  
+  end
   
 end
