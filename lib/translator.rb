@@ -17,12 +17,14 @@ def load_library(file)
   emoticon_library.each do |emoji_title, faces_array|
     dictionary["get_emoticon"][faces_array[0]] = faces_array[1]
   end
-  
+  binding.pry
   dictionary
 end
 
 def get_japanese_emoticon(yaml_file, emoticon)
-  load_library(yaml_file)
+  emoticon_dictionary = load_library(yaml_file)
+  
+  
 end
 
 def get_english_meaning
