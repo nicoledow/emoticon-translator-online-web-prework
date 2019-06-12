@@ -7,10 +7,15 @@ def load_library(file)
   
   dictionary = {"get_emoticon" => {}, "get_meaning" => {}}
   
+  #iterates through emoticon_library and sets emoticons as keys with their meanings as values
   emoticon_library.each do |emoji_title, faces_array|
     faces_array.each do |face|
       dictionary["get_meaning"][face] = emoji_title
     end
+  end
+  
+  emoticon_library.each do |emoji_title, faces_array|
+    binding.pry
   end
   
   dictionary
