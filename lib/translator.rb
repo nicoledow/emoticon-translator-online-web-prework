@@ -11,6 +11,7 @@ def load_library(file)
     faces_array.each do |face|
     #dictionary["get_meaning"][faces] = emoji_title
     binding.pry
+    end
   end
   
   dictionary
