@@ -24,7 +24,11 @@ end
 def get_japanese_emoticon(yaml_file, emoticon)
   emoticon_dictionary = load_library(yaml_file)
   
-  emoticon_dictionary["get_emoticon"][emoticon]
+  if emoticon_dictionary["get_emoticon"].has_key?(emoticon)
+    emoticon_dictionary["get_emoticon"][emoticon]
+  else
+    return "Sorry, that emoticon was not found"
+  end
 end
 
 def get_english_meaning
