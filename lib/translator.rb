@@ -5,7 +5,7 @@ require "pry"
 def load_library(file)
   emoticon_library = YAML.load_file(file)
   
-  dictionary = {get_emoticon = {}, get_meaning ={}}
+  dictionary = {"get_emoticon" => {}, "get_meaning" => {}}
   
   emoticon_library.each do |emoji|
     binding.pry
